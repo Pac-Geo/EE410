@@ -1,0 +1,12 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_gen/clk_gen.v,1792210187,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sources_1/new/freq_meter.v,,clk_gen,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_gen/clk_gen_clk_wiz.v,1792210187,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_gen/clk_gen.v,,clk_gen_clk_wiz,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_test_gen/clk_test_gen.v,1792209432,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_gen/clk_gen_clk_wiz.v,,clk_test_gen,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_test_gen/clk_test_gen_clk_wiz.v,1792209432,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.gen/sources_1/ip/clk_test_gen/clk_test_gen.v,,clk_test_gen_clk_wiz,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sim_1/new/tb_freq_meter.v,1792211187,verilog,,,,tb_freq_meter,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sources_1/new/freq_meter.v,1792209510,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sources_1/new/freq_meter_calc.v,,freq_meter,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
+C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sources_1/new/freq_meter_calc.v,1792208692,verilog,,C:/Users/geova/Vivado/PynQ/project_1/project_1.srcs/sim_1/new/tb_freq_meter.v,,freq_meter_calc,,,../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef;../../../../project_1.ip_user_files/ipstatic,,,,,
