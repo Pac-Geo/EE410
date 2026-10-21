@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 21 01:28:18 2026
+# Process ID         : 3268
+# Current directory  : C:/Users/geova/Vivado/PynQ/PLL_Experiment
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11408 C:\Users\geova\Vivado\PynQ\PLL_Experiment\PLL_Experiment.xpr
+# Log file           : C:/Users/geova/Vivado/PynQ/PLL_Experiment/vivado.log
+# Journal file       : C:/Users/geova/Vivado/PynQ/PLL_Experiment\vivado.jou
+# Running On         : Spark
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 17090 MB
+# Swap memory        : 1409 MB
+# Total Virtual      : 18500 MB
+# Available Virtual  : 2115 MB
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/geova/Vivado/PynQ/PLL_Experiment/PLL_Experiment.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,41 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 09-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 21 01:28:18 2026
+# Process ID         : 3268
+# Current directory  : C:/Users/geova/Vivado/PynQ/PLL_Experiment
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11408 C:\Users\geova\Vivado\PynQ\PLL_Experiment\PLL_Experiment.xpr
+# Log file           : C:/Users/geova/Vivado/PynQ/PLL_Experiment/vivado.log
+# Journal file       : C:/Users/geova/Vivado/PynQ/PLL_Experiment\vivado.jou
+# Running On         : Spark
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 17090 MB
+# Swap memory        : 1409 MB
+# Total Virtual      : 18500 MB
+# Available Virtual  : 2115 MB
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/geova/Vivado/PynQ/PLL_Experiment/PLL_Experiment.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado2026/2026.1/Vivado/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+error reading package index file C:/Viexit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 01:28:59 2026...
+ommon 17-344] 'tclapp::load_apps' was cancelled
+1
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1746.484 ; gain = 325.703
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 01:28:45 2026...
