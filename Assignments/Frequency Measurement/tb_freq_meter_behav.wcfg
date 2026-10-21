@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_freq_meter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_freq_meter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="8.816181 us"></ZoomEndTime>
+      <Cursor1Time time="1.804000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_freq_meter/clk_out" type="logic">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/clk_test" type="logic">
+      <obj_property name="ElementShortName">clk_test</obj_property>
+      <obj_property name="ObjectShortName">clk_test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/uut/freq_meter_calc_inst/gate_s" type="logic">
+      <obj_property name="ElementShortName">gate_s</obj_property>
+      <obj_property name="ObjectShortName">gate_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/uut/freq_meter_calc_inst/gate_a" type="logic">
+      <obj_property name="ElementShortName">gate_a</obj_property>
+      <obj_property name="ObjectShortName">gate_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/uut/freq_meter_calc_inst/cnt_clk_test_reg" type="array">
+      <obj_property name="ElementShortName">cnt_clk_test_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_clk_test_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_freq_meter/uut/freq_meter_calc_inst/cnt_clk_stand_reg" type="array">
+      <obj_property name="ElementShortName">cnt_clk_stand_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_clk_stand_reg[31:0]</obj_property>
+   </wvobject>
+</wave_config>
