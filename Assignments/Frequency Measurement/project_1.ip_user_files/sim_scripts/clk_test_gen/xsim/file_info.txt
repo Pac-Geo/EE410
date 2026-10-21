@@ -1,0 +1,3 @@
+clk_test_gen_clk_wiz.v,verilog,xil_defaultlib,../../../../project_1.gen/sources_1/ip/clk_test_gen/clk_test_gen_clk_wiz.v,incdir="../../../ipstatic"incdir="../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef"incdir="../../../ipstatic"
+clk_test_gen.v,verilog,xil_defaultlib,../../../../project_1.gen/sources_1/ip/clk_test_gen/clk_test_gen.v,incdir="../../../ipstatic"incdir="../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v
