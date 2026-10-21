@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef" --include "../../../../PLL_Experiment.ip_user_files/ipstatic" \
+"../../../../PLL_Experiment.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../PLL_Experiment.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../PLL_Experiment.srcs/sources_1/new/pll_top.v" \
+"../../../../PLL_Experiment.srcs/sim_1/new/tb_pll_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
