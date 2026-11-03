@@ -31,14 +31,16 @@ module pbl10 (
 endmodule
 ```
 RTL View
+
 <img width="747" height="210" alt="Screenshot 2026-11-03 at 11 30 20 AM" src="https://github.com/user-attachments/assets/11a7cfb4-9eb2-4f4d-a046-5d69af099816" />
 
 PBL 11: Four-Bit Full-Adder with Latch
 Design a 4-bit adder that is connected to a latch, as depicted in the block diagram shown in Figure 6.19. The input signals, a and b, are both 4 bits wide, resulting in a 5-bit output signal, c.
-r
+
 The latch requires two control signals:
 - en: Enable signal to activate the latch.
 - rst: Asynchronous reset signal to reset the latch output to hexadecimal 5'h0.
+  
 <img width="167" height="72" alt="Screenshot 2026-11-03 at 12 31 15 PM" src="https://github.com/user-attachments/assets/5f9c671b-f51e-4e7a-99b0-a81a290c950e" />![Uploading Screenshot 2026-11-03 at 12.31.39 PM.png…]()
 
 Figure 6.19 — Block Diagram of 4-bit Adder with Latch.
@@ -65,12 +67,9 @@ end
 
 endmodule
 ```
+<img width="730" height="373" alt="Screenshot 2026-11-03 at 12 40 10 PM" src="https://github.com/user-attachments/assets/d89f9f7e-a0ea-4237-8ae3-5c8f7e5aead3" />
+
 <img width="630" height="374" alt="Screenshot 2026-11-03 at 12 32 03 PM" src="https://github.com/user-attachments/assets/dcb8b05c-3fc9-46bf-860f-6e085d06dfaa" />
-
-<img width="746" height="209" alt="Screenshot 2026-11-03 at 12 32 24 PM" src="https://github.com/user-attachments/assets/dfc847e8-4d39-4dc8-9bdc-db218a086ad2" />
-
-
-
 
 
 PBL 12: Four-Bit Full-Adder with Register
@@ -79,7 +78,8 @@ Design a 4-bit adder that is connected to a register, as depicted in the block d
 The register requires two control signals:
 - clk: Clock signal.
 - rst: Asynchronous reset signal to reset the register output to hexadecimal 5'h0.
-  <img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />![Uploading Screenshot 2026-11-03 at 12.37.46 PM.png…]()
+
+<img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />![Uploading Screenshot 2026-11-03 at 12.37.46 PM.png…]()
 
 Figure 6.20 — Block Diagram of 4-bit Adder with Register.
 PBL 13: Counter 0–9
