@@ -18,12 +18,9 @@ module pbl10 (
     input wire en,
     output wire [4:0] c
 );
-
     wire [4:0] sum;
-
     assign sum = {1'b0, a} + {1'b0, b};
     assign c = en ? sum : 5'bzzzzz;
-
 endmodule
 
 RTL View
