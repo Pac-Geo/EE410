@@ -1,13 +1,10 @@
 
 PBL 10: Four-Bit Full-Adder with Tri-State Buer
-Design a 4-bit adder that is connected to a tri-state buer, as depicted in the
-block diagram shown in Figure 6.18. The input signals, a and b, are both
-4 bits wide, resulting in a 5-bit output signal, c. To control the functionality
-of the tri-state buer, an enable signal labeled as en is required. When the
-enable signal evaluates to FALSE (or binary zero), the output of the tri-state
-buer will be in a high-impedance state, denoted as high-Z, indicating an
-open circuit. When the enable signal evaluates to TURE (or binary one), the
-output will be assigned as the adder's output
+Design a 4-bit adder that is connected to a tri-state buffer, as depicted in the block diagram shown in Figure 6.18. The input signals, a and b, are both 4 bits wide, resulting in a 5-bit output signal, c.
+
+To control the functionality of the tri-state buffer, an enable signal labeled en is required:
+- When en = 0 (FALSE), the output of the tri-state buffer is in a high-impedance state (high-Z), indicating an open circuit.
+- When en = 1 (TRUE), the output is assigned the adder's result.
 
 Sysnthesys analysis View
 <img width="654" height="375" alt="Screenshot 2026-11-03 at 11 00 43 AM" src="https://github.com/user-attachments/assets/47fed1b2-47e6-4b38-aa0e-19ea92155993" />
