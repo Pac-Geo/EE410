@@ -6,5 +6,4 @@ enable signal evaluates to FALSE (or binary zero), the output of the tri-state
 buer will be in a high-impedance state, denoted as high-Z, indicating an
 open circuit. When the enable signal evaluates to TURE (or binary one), the
 output will be assigned as the adder's output
-
-![Screenshot](Screenshot%202026-11-03%20at%2011.00.43%E2%80%AFAM.png)
+![Screenshot](Screenshot 2026-11-03 at 11.00.43 AM.png)
