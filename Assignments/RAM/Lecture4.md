@@ -278,6 +278,9 @@ A counter-based timing controller coordinates the operations. The enable input e
 
 Hint from the source: The addition and multiplication operations may be described in Verilog using + and *. Assume there are no overflow situations. Three 8-bit registers are needed between the ADD–MUL1–MUL2 stages to store intermediate results and isolate the datapath stages.
 
+<img width="466" height="254" alt="Screenshot 2026-11-03 at 2 29 33 PM" src="https://github.com/user-attachments/assets/8550aa52-f291-4cd4-ae43-32dfbc2914fb" />
+
+
 Table 6.6 — Timing Controller I/O Description
 Name	Direction	Bit Width	Description
 clk	Input	1	Clock, 100 MHz
@@ -300,4 +303,5 @@ Figure 6.25 — Design Specification of Timing Controller (Datapath and Timing D
 
 
 
+<img width="787" height="222" alt="image" src="https://github.com/user-attachments/assets/12cfcd0f-05a2-485b-acb5-f3867bee4c59" />
 
