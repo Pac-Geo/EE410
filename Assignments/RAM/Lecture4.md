@@ -34,7 +34,7 @@ RTL View
 
 PBL 11: Four-Bit Full-Adder with Latch
 Design a 4-bit adder that is connected to a latch, as depicted in the block diagram shown in Figure 6.19. The input signals, a and b, are both 4 bits wide, resulting in a 5-bit output signal, c.
-
+r
 The latch requires two control signals:
 - en: Enable signal to activate the latch.
 - rst: Asynchronous reset signal to reset the latch output to hexadecimal 5'h0.
