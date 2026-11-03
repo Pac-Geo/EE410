@@ -81,18 +81,35 @@ The register requires two control signals:
 
 <img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />
 
-
-<img width="179" height="86" alt="Screenshot 2026-11-03 at 12 42 45 PM" src="https://github.com/user-attachments/assets/6685aa3b-b002-45b1-9768-60be1daf3ed6" />
-
 Figure 6.20 — Block Diagram of 4-bit Adder with Register.
 
 ```verilog
+module pbl12 (
+    input wire [3:0] a,
+    input wire [3:0] b,
+    input wire clk,
+    input wire rst,
+    output reg [4:0] c
+);
 
+wire [4:0] sum;
 
+assign sum = {1'b0, a} + {1'b0, b};
 
+always @(posedge clk or negedge rst) begin
+    if (!rst)
+        c <= 5'h0;
+    else
+        c <= sum;
+end
+
+endmodule
 ```
+<img width="748" height="254" alt="Screenshot 2026-11-03 at 1 06 09 PM" src="https://github.com/user-attachments/assets/d607f1e7-6bf8-4960-8627-524296e5d090" />
 
-In Synthesis running the 
+<img width="641" height="425" alt="image" src="https://github.com/user-attachments/assets/4b1c1725-4603-480a-93c2-4b8f7afe0493" />
+
+NOTE: In Running Synthesis
 Timing warnings: Vivado doesn't have a clock constraint (create_clock). This matters for hardware timing analysis, but it doesn't prevent us from checking the assignment's logic.
 
 Simulation error: Vivado cannot access simulate.log because another process is using it. This is a file-locking problem, not a Verilog error.
@@ -100,21 +117,48 @@ Simulation error: Vivado cannot access simulate.log because another process is u
 
 
 PBL 13: Counter 0–9
-Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as specified in Figure 6.21(a). The counter operates based on an asynchronous reset and is triggered by the rising clock edge. When the counter reaches its maximum value of 4'h9, it restarts from 4'h0 in the next counting loop. The output cnt is a 4-bit value.
+Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as specified in Figure 6.21(a). The counter has the following input/output connections, as summarized in Table 6.3. It operates based on an asynchronous reset and is triggered by the rising clock edge. When the counter reaches its maximum value of 4'h9, it restarts from 4'h0 in the next counting loop. The output of the counter is a 4-bit value, accommodating hexadecimal values ranging from 4'h0 to 4'h9.
 
-Table 6.3 — Counter 0–9 I/O Description
-Name	Direction	Bit Width	Description
-clk	Input	1	Clock, rising-edge trigger, 100 MHz
-rst	Input	1	Asynchronous reset, active-low (0 valid)
-en	Input	1	Enable signal, active-high (1 valid)
-cnt	Output	4	Counter output
+<img width="437" height="128" alt="Screenshot 2026-11-03 at 1 13 14 PM" src="https://github.com/user-attachments/assets/8b6822ae-591d-47ed-9a08-155a742c9c48" />
 
-
-Additional design specifications:
+<img width="388" height="228" alt="Screenshot 2026-11-03 at 1 13 40 PM" src="https://github.com/user-attachments/assets/0f817596-59fd-483f-afc9-e0bb943dd5fa" />
+Figure 6.21 — Design Specification of Counter for 10 Cycles.
 - Figure 6.21(b) illustrates the timing diagram, showing the counter progressing from 4'h0 to 4'h9.
 - Figure 6.21(c) depicts a comparator and multiplexer for returning the counter to 4'h0 after reaching 4'h9.
 - The comparator checks whether cnt == 4'h9. If TRUE, the multiplexer selects 4'h0; otherwise it selects cnt + 4'h1.
-Figure 6.21 — Design Specification of Counter for 10 Cycles.
+
+Figure 6.21(b) illustrates the timing diagram of the counter, showcasin its behavior from hexadecimal 4'h0 to 4'h9. To handle the initialization of the counter when it reaches hexadecimal 4'h9, the utilization of a comparator and a multiplexer is required. Figure 6.21(c) presents a block diagram depicting these components. The comparator compares the counter output with the hexadecimal value 4'h9. When the counter reaches 4'h9, the comparator output evaluates to TRUE This triggers the multiplexer to switch its channels. If the comparator output is TRUE, the multiplexer selects the input signal representing 4'h0, causing the counter to reset back to hexadecimal 4'h0. On the other hand, if the comparator output is FALSE, the multiplexer selects the input signal representing the current counter value plus hexadecimal 4'h1, incrementing the counter by one during each clock cycle.
+
+```veriog
+module pbl13 (
+    input wire clk,
+    input wire rst,
+    input wire en,
+    output reg [3:0] cnt
+);
+
+always @(posedge clk or negedge rst) begin
+    if (!rst)
+        cnt <= 4'h0;
+    else if (en) begin
+        if (cnt == 4'h9)
+            cnt <= 4'h0;
+        else
+            cnt <= cnt + 4'h1;
+    end
+end
+
+endmodule
+```
+<img width="773" height="251" alt="Screenshot 2026-11-03 at 1 29 19 PM" src="https://github.com/user-attachments/assets/a63f2f81-37ff-494a-a5ff-4f714139b8df" />
+
+<img width="825" height="218" alt="Screenshot 2026-11-03 at 1 28 34 PM" src="https://github.com/user-attachments/assets/70de7dd4-eb3e-45e8-b910-cd7040344f14" />
+
+
+
+
+
+
 PBL 14: Timer 0–9
 Design a timer that counts from hexadecimal 4'h0 to 4'h9 with a unit of 0.1 microseconds (µs). The sequential circuit utilizes an asynchronous reset and is triggered by the rising clock edge.
 
