@@ -41,7 +41,7 @@ The latch requires two control signals:
 - en: Enable signal to activate the latch.
 - rst: Asynchronous reset signal to reset the latch output to hexadecimal 5'h0.
   
-<img width="167" height="72" alt="Screenshot 2026-11-03 at 12 31 15 PM" src="https://github.com/user-attachments/assets/5f9c671b-f51e-4e7a-99b0-a81a290c950e" />![Uploading Screenshot 2026-11-03 at 12.31.39 PM.png…]()
+<img width="167" height="72" alt="Screenshot 2026-11-03 at 12 31 15 PM" src="https://github.com/user-attachments/assets/5f9c671b-f51e-4e7a-99b0-a81a290c950e" />
 
 Figure 6.19 — Block Diagram of 4-bit Adder with Latch.
 
@@ -79,9 +79,26 @@ The register requires two control signals:
 - clk: Clock signal.
 - rst: Asynchronous reset signal to reset the register output to hexadecimal 5'h0.
 
-<img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />![Uploading Screenshot 2026-11-03 at 12.37.46 PM.png…]()
+<img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />
+
+
+<img width="179" height="86" alt="Screenshot 2026-11-03 at 12 42 45 PM" src="https://github.com/user-attachments/assets/6685aa3b-b002-45b1-9768-60be1daf3ed6" />
 
 Figure 6.20 — Block Diagram of 4-bit Adder with Register.
+
+```verilog
+
+
+
+```
+
+In Synthesis running the 
+Timing warnings: Vivado doesn't have a clock constraint (create_clock). This matters for hardware timing analysis, but it doesn't prevent us from checking the assignment's logic.
+
+Simulation error: Vivado cannot access simulate.log because another process is using it. This is a file-locking problem, not a Verilog error.
+
+
+
 PBL 13: Counter 0–9
 Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as specified in Figure 6.21(a). The counter operates based on an asynchronous reset and is triggered by the rising clock edge. When the counter reaches its maximum value of 4'h9, it restarts from 4'h0 in the next counting loop. The output cnt is a 4-bit value.
 
