@@ -121,7 +121,9 @@ Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as spec
 
 <img width="437" height="128" alt="Screenshot 2026-11-03 at 1 13 14 PM" src="https://github.com/user-attachments/assets/8b6822ae-591d-47ed-9a08-155a742c9c48" />
 
+
 <img width="388" height="228" alt="Screenshot 2026-11-03 at 1 13 40 PM" src="https://github.com/user-attachments/assets/0f817596-59fd-483f-afc9-e0bb943dd5fa" />
+
 Figure 6.21 — Design Specification of Counter for 10 Cycles.
 - Figure 6.21(b) illustrates the timing diagram, showing the counter progressing from 4'h0 to 4'h9.
 - Figure 6.21(c) depicts a comparator and multiplexer for returning the counter to 4'h0 after reaching 4'h9.
@@ -130,6 +132,7 @@ Figure 6.21 — Design Specification of Counter for 10 Cycles.
 Figure 6.21(b) illustrates the timing diagram of the counter, showcasin its behavior from hexadecimal 4'h0 to 4'h9. To handle the initialization of the counter when it reaches hexadecimal 4'h9, the utilization of a comparator and a multiplexer is required. Figure 6.21(c) presents a block diagram depicting these components. The comparator compares the counter output with the hexadecimal value 4'h9. When the counter reaches 4'h9, the comparator output evaluates to TRUE This triggers the multiplexer to switch its channels. If the comparator output is TRUE, the multiplexer selects the input signal representing 4'h0, causing the counter to reset back to hexadecimal 4'h0. On the other hand, if the comparator output is FALSE, the multiplexer selects the input signal representing the current counter value plus hexadecimal 4'h1, incrementing the counter by one during each clock cycle.
 
 ```veriog
+
 module pbl13 (
     input wire clk,
     input wire rst,
@@ -152,11 +155,8 @@ endmodule
 ```
 <img width="773" height="251" alt="Screenshot 2026-11-03 at 1 29 19 PM" src="https://github.com/user-attachments/assets/a63f2f81-37ff-494a-a5ff-4f714139b8df" />
 
+
 <img width="825" height="218" alt="Screenshot 2026-11-03 at 1 28 34 PM" src="https://github.com/user-attachments/assets/70de7dd4-eb3e-45e8-b910-cd7040344f14" />
-
-
-
-
 
 
 PBL 14: Timer 0–9
@@ -164,36 +164,111 @@ Design a timer that counts from hexadecimal 4'h0 to 4'h9 with a unit of 0.1 micr
 
 Hint from the source: With a clock frequency of 100 MHz, each clock cycle lasts 10 nanoseconds (ns). To achieve a unit of 0.1 µs, use 10 clock cycles per timer unit.
 
-Table 6.4 — Timer 0–9 I/O Description
-Name	Direction	Bit Width	Description
-clk	Input	1	Clock, rising-edge trigger, 100 MHz
-rst	Input	1	Asynchronous reset, active-low (0 valid)
-en	Input	1	Enable the timer from 0 to 9
-tim	Output	4	Timer output
+<img width="441" height="124" alt="Screenshot 2026-11-03 at 1 38 15 PM" src="https://github.com/user-attachments/assets/114c2457-5d71-4a78-a5d3-0b118079e595" />
 
+<img width="429" height="271" alt="Screenshot 2026-11-03 at 1 41 02 PM" src="https://github.com/user-attachments/assets/7afcb4f7-2879-405f-b120-94aadb8d62c6" />
 
-Additional design specifications:
+Figure 6.22 — Design Specification of Timer for 10 × 0.1 µs.
 - Figure 6.22(a) describes a two-level design. A first-level counter measures groups of 10 clock cycles; a second-level timer advances tim by 4'h1 for each group.
 - Figure 6.22(b) shows tim incrementing every 10 clock cycles. After the 100th clock cycle, both cnt and tim restart at 4'h0.
 - Figure 6.22(c) shows comparators checking whether cnt == 4'h9 and tim == 4'h9; their outputs are combined to determine when the complete timer sequence restarts.
-Figure 6.22 — Design Specification of Timer for 10 × 0.1 µs.
+
+```verilog
+module pbl14 (
+    input wire clk,
+    input wire rst,
+    input wire en,
+    output reg [3:0] tim
+);
+
+reg [3:0] cnt;
+
+always @(posedge clk or negedge rst) begin
+    if (!rst) begin
+        cnt <= 4'h0;
+        tim <= 4'h0;
+    end
+    else if (en) begin
+        if (cnt == 4'h9) begin
+            cnt <= 4'h0;
+
+            if (tim == 4'h9)
+                tim <= 4'h0;
+            else
+                tim <= tim + 4'h1;
+        end
+        else
+            cnt <= cnt + 4'h1;
+    end
+end
+
+endmodule
+```
+<img width="773" height="203" alt="Screenshot 2026-11-03 at 1 39 54 PM" src="https://github.com/user-attachments/assets/e5eef544-7a82-4cdc-b889-cad65cad1418" />
+
+<img width="827" height="165" alt="Screenshot 2026-11-03 at 1 40 15 PM" src="https://github.com/user-attachments/assets/5e7b6827-9f85-4631-9d55-3b4ae4c317cc" />
+
+
 PBL 15: Timing Interface
 Design a timing interface as depicted in the timing diagram shown in Figure 6.23. The output signal, sig, is initially set to binary zero. It transitions to binary one during the intervals 0–0.3 µs and 0.6–0.9 µs. Between 0.4 µs and 0.5 µs, it is zero. After 0.9 µs, the signal returns to zero.
 
-Table 6.5 — Timing Interface I/O Description
-Name	Direction	Bit Width	Description
-clk	Input	1	Clock, 100 MHz
-rst	Input	1	Asynchronous reset, active-low (0 valid)
-en	Input	1	Enable signal
-sig	Output	1	Signal output
+<img width="394" height="129" alt="image" src="https://github.com/user-attachments/assets/a6d42900-bd6f-4663-bd3d-d8523f56e2f2" />
+
+<img width="294" height="100" alt="image" src="https://github.com/user-attachments/assets/77572c08-e9ec-4f6a-ad6b-00edde439473" />
 
 
-Additional design specifications:
+ <img width="451" height="253" alt="Screenshot 2026-11-03 at 1 55 39 PM" src="https://github.com/user-attachments/assets/0f855326-29db-4335-862c-b7ca82a94bea" />
+
 - Figure 6.24 shows the timing interface's block diagram, using the timer from Figure 6.22.
 - The timer output is compared against hexadecimal 4'h3, 4'h4, and 4'h9.
 - Set sig = 1'b1 when (tim > 4'h4 AND tim < 4'h9), OR when (tim < 4'h3).
 - The specified output logic can therefore be implemented using comparisons, an AND gate, and an OR gate.
-Figures 6.23 and 6.24 — Timing Diagram and Block Diagram of Timing Interface.
+Figures 6.23 and
+6.24 — Timing Diagram and Block Diagram of Timing Interface.
+
+```verilog
+module pbl15 (
+    input wire clk,
+    input wire rst,
+    input wire en,
+    output wire sig
+);
+
+reg [3:0] cnt;
+reg [3:0] tim;
+
+// Timer: 100 MHz clock, 0.1 us per timer unit
+always @(posedge clk or negedge rst) begin
+    if (!rst) begin
+        cnt <= 4'h0;
+        tim <= 4'h0;
+    end
+    else if (en) begin
+        if (cnt == 4'h9) begin
+            cnt <= 4'h0;
+
+            if (tim == 4'h9)
+                tim <= 4'h0;
+            else
+                tim <= tim + 4'h1;
+        end
+        else
+            cnt <= cnt + 4'h1;
+    end
+end
+
+// Timing interface output
+assign sig = rst && en &&
+             ((tim <= 4'h3) || (tim >= 4'h6));
+
+endmodule
+
+```
+<img width="782" height="188" alt="image" src="https://github.com/user-attachments/assets/1662bceb-7d3b-402c-ac35-70c9b8bc14f0" />
+
+<img width="832" height="193" alt="image" src="https://github.com/user-attachments/assets/42cfc08b-dbcf-4dd8-951a-62cb6f4d5efc" />
+
+
 PBL 16: Timing Controller
 Design a circuit composed of a datapath and a timing controller, as specified in Figure 6.25(a). The datapath consists of three 8-bit binary components: an adder (ADD) followed by two multipliers (MUL1 and MUL2) in series.
 
