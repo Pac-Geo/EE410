@@ -13,14 +13,23 @@ Sysnthesys analysis View
 <img width="654" height="375" alt="Screenshot 2026-11-03 at 11 00 43 AM" src="https://github.com/user-attachments/assets/47fed1b2-47e6-4b38-aa0e-19ea92155993" />
 
 module pbl10 (
+
     input wire [3:0] a,
+    
     input wire [3:0] b,
+    
     input wire en,
+    
     output wire [4:0] c
+    
 );
+
     wire [4:0] sum;
+    
     assign sum = {1'b0, a} + {1'b0, b};
+    
     assign c = en ? sum : 5'bzzzzz;
+    
 endmodule
 
 RTL View
