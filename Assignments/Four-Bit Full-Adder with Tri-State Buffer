@@ -7,4 +7,4 @@ buer will be in a high-impedance state, denoted as high-Z, indicating an
 open circuit. When the enable signal evaluates to TURE (or binary one), the
 output will be assigned as the adder's output
 
-![Screenshot](file:///Users/pacgeo/Desktop/Screenshot%202026-11-03%20at%2011.00.43%E2%80%AFAM.png)
+![Screenshot](Screenshot%202026-11-03%20at%2011.00.43%E2%80%AFAM.png)
