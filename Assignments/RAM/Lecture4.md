@@ -68,7 +68,7 @@ end
 endmodule
 ```
 <img width="730" height="373" alt="Screenshot 2026-11-03 at 12 40 10 PM" src="https://github.com/user-attachments/assets/d89f9f7e-a0ea-4237-8ae3-5c8f7e5aead3" />
-
+.
 <img width="630" height="374" alt="Screenshot 2026-11-03 at 12 32 03 PM" src="https://github.com/user-attachments/assets/dcb8b05c-3fc9-46bf-860f-6e085d06dfaa" />
 
 
@@ -120,7 +120,7 @@ PBL 13: Counter 0–9
 Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as specified in Figure 6.21(a). The counter has the following input/output connections, as summarized in Table 6.3. It operates based on an asynchronous reset and is triggered by the rising clock edge. When the counter reaches its maximum value of 4'h9, it restarts from 4'h0 in the next counting loop. The output of the counter is a 4-bit value, accommodating hexadecimal values ranging from 4'h0 to 4'h9.
 
 <img width="437" height="128" alt="Screenshot 2026-11-03 at 1 13 14 PM" src="https://github.com/user-attachments/assets/8b6822ae-591d-47ed-9a08-155a742c9c48" />
-
+.
 
 <img width="388" height="228" alt="Screenshot 2026-11-03 at 1 13 40 PM" src="https://github.com/user-attachments/assets/0f817596-59fd-483f-afc9-e0bb943dd5fa" />
 
@@ -264,7 +264,7 @@ assign sig = rst && en &&
 endmodule
 
 ```
-<img width="782" height="188" alt="image" src="https://github.com/user-attachments/assets/1662bceb-7d3b-402c-ac35-70c9b8bc14f0" />
+<img width="783" height="173" alt="image" src="https://github.com/user-attachments/assets/7e5f56eb-306a-4b78-bb43-c111a532afe9" />
 
 <img width="832" height="193" alt="image" src="https://github.com/user-attachments/assets/42cfc08b-dbcf-4dd8-951a-62cb6f4d5efc" />
 
