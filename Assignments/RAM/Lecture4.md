@@ -5,6 +5,7 @@ Design a 4-bit adder that is connected to a tri-state buffer, as depicted in the
 To control the functionality of the tri-state buffer, an enable signal labeled en is required:
 - When en = 0 (FALSE), the output of the tri-state buffer is in a high-impedance state (high-Z), indicating an open circuit.
 - When en = 1 (TRUE), the output is assigned the adder's result.
+<img width="276" height="104" alt="Screenshot 2026-11-03 at 12 30 28 PM" src="https://github.com/user-attachments/assets/c48cf6b4-fcbc-4986-96cf-8a499d2b199a" />
 
 Sysnthesys analysis View
 <img width="654" height="375" alt="Screenshot 2026-11-03 at 11 00 43 AM" src="https://github.com/user-attachments/assets/47fed1b2-47e6-4b38-aa0e-19ea92155993" />
@@ -38,6 +39,8 @@ r
 The latch requires two control signals:
 - en: Enable signal to activate the latch.
 - rst: Asynchronous reset signal to reset the latch output to hexadecimal 5'h0.
+<img width="167" height="72" alt="Screenshot 2026-11-03 at 12 31 15 PM" src="https://github.com/user-attachments/assets/5f9c671b-f51e-4e7a-99b0-a81a290c950e" />![Uploading Screenshot 2026-11-03 at 12.31.39 PM.png…]()
+
 Figure 6.19 — Block Diagram of 4-bit Adder with Latch.
 
 ```verilog
@@ -62,11 +65,9 @@ end
 
 endmodule
 ```
+<img width="630" height="374" alt="Screenshot 2026-11-03 at 12 32 03 PM" src="https://github.com/user-attachments/assets/dcb8b05c-3fc9-46bf-860f-6e085d06dfaa" />
 
-
-
-
-
+<img width="746" height="209" alt="Screenshot 2026-11-03 at 12 32 24 PM" src="https://github.com/user-attachments/assets/dfc847e8-4d39-4dc8-9bdc-db218a086ad2" />
 
 
 
@@ -78,6 +79,8 @@ Design a 4-bit adder that is connected to a register, as depicted in the block d
 The register requires two control signals:
 - clk: Clock signal.
 - rst: Asynchronous reset signal to reset the register output to hexadecimal 5'h0.
+  <img width="166" height="72" alt="Screenshot 2026-11-03 at 12 35 13 PM" src="https://github.com/user-attachments/assets/9f04f9d8-8617-4f5e-9964-ea80190182e1" />![Uploading Screenshot 2026-11-03 at 12.37.46 PM.png…]()
+
 Figure 6.20 — Block Diagram of 4-bit Adder with Register.
 PBL 13: Counter 0–9
 Design a counter that counts clock cycles from hexadecimal 4'h0 to 4'h9, as specified in Figure 6.21(a). The counter operates based on an asynchronous reset and is triggered by the rising clock edge. When the counter reaches its maximum value of 4'h9, it restarts from 4'h0 in the next counting loop. The output cnt is a 4-bit value.
