@@ -1,0 +1,2 @@
+xadc_wiz_0.v,verilog,xil_defaultlib,../../../../XDAC.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v,incdir="../../../../../../../../../Vivado2026/2026.1/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v
