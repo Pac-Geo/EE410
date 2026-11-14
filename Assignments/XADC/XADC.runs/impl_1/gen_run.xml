@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1794637524">
+  <File Type="PA-TCL" Name="temperature_monitor.tcl"/>
+  <File Type="REPORTS-TCL" Name="temperature_monitor_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="temperature_monitor_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="temperature_monitor_opt.dcp"/>
+  <File Type="OPT-DRC" Name="temperature_monitor_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="temperature_monitor_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="temperature_monitor_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="temperature_monitor_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="temperature_monitor.hwdef"/>
+  <File Type="OPT-TIMING" Name="temperature_monitor_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="temperature_monitor_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="temperature_monitor_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="temperature_monitor_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="temperature_monitor_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="temperature_monitor_placed.dcp"/>
+  <File Type="PLACE-IO" Name="temperature_monitor_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="temperature_monitor_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="temperature_monitor_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="temperature_monitor_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="temperature_monitor_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="temperature_monitor_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="temperature_monitor_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="temperature_monitor_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="temperature_monitor_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="temperature_monitor_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="temperature_monitor_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="temperature_monitor_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="temperature_monitor_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="temperature_monitor_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="temperature_monitor_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="temperature_monitor_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="temperature_monitor_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="temperature_monitor_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="temperature_monitor_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="temperature_monitor_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="temperature_monitor_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="temperature_monitor_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="temperature_monitor_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="temperature_monitor_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="temperature_monitor_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="temperature_monitor_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="temperature_monitor_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="temperature_monitor_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="temperature_monitor_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="temperature_monitor_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="temperature_monitor_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="temperature_monitor_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="temperature_monitor_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="temperature_monitor_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="temperature_monitor_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="temperature_monitor_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="temperature_monitor_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="temperature_monitor_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="temperature_monitor_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="temperature_monitor_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="temperature_monitor_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="temperature_monitor_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="temperature_monitor_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="temperature_monitor_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="temperature_monitor_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="temperature_monitor_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="temperature_monitor_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="temperature_monitor.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="temperature_monitor.ncr"/>
+  <File Type="BG-BIT" Name="temperature_monitor.bit"/>
+  <File Type="BG-XML" Name="temperature_monitor.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="temperature_monitor.bin"/>
+  <File Type="BITSTR-MSK" Name="temperature_monitor.msk"/>
+  <File Type="BITSTR-RBT" Name="temperature_monitor.rbt"/>
+  <File Type="BITSTR-NKY" Name="temperature_monitor.nky"/>
+  <File Type="BITSTR-BMM" Name="temperature_monitor_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="temperature_monitor.mmi"/>
+  <File Type="PDI-FILE" Name="temperature_monitor.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="temperature_monitor_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="temperature_monitor_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="temperature_monitor.rcfi"/>
+  <File Type="CFI_FILE" Name="temperature_monitor.cfi"/>
+  <File Type="RNPI_FILE" Name="temperature_monitor.rnpi"/>
+  <File Type="RCDO-FILE" Name="temperature_monitor.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="temperature_monitor_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="temperature_monitor_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="temperature_monitor_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="temperature_monitor_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="temperature_monitor_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="temperature_monitor_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="temperature_monitor_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="temperature_monitor_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="temperature_monitor_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="temperature_monitor_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="temperature_monitor_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="temperature_monitor_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="temperature_monitor_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="temperature_monitor_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="temperature_monitor_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="temperature_monitor.npi"/>
+  <File Type="RBD_FILE" Name="temperature_monitor.rbd"/>
+  <File Type="MMI-FILE" Name="temperature_monitor.mmi"/>
+  <File Type="BIF-FILE" Name="temperature_monitor.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="temperature_monitor_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="temperature_monitor_pld.bif"/>
+  <File Type="LTX-FILE" Name="temperature_monitor.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="temperature_monitor_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="temperature_monitor_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="temperature_monitor.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="temperature_monitor.sysdef"/>
+  <File Type="BG-BGN" Name="temperature_monitor.bgn"/>
+  <File Type="BG-DRC" Name="temperature_monitor.drc"/>
+  <File Type="RDI-RDI" Name="temperature_monitor.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="temperature_monitor_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="temperature_monitor_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/temperature_monitor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Downloads/rom_initial_file.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="temperature_monitor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/temperature_monitor.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>
